@@ -6,7 +6,7 @@
 	<span><%= book.body %></span>
 	<%= link_to "Show", book_path(book.id) %>
 	<%= link_to "Edit", edit_book_path(book.id) %>
-	<%= link_to "Destroy", '/books', method: :delete %>
+	<%= link_to "Destroy", book_path(book), method: :delete %>
 <% end %>
 
 <h2>New Book</h2>
