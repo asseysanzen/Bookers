@@ -5,6 +5,15 @@
 	<p>Body</p>
 	<span><%= book.body %></span>
 	<%= link_to "Show", book_path(book.id) %>
-	<%= link_to "Edit", edit_book_path(@book.id) %>
-	<%= link_to "Destroy", '/books' %>
+	<%= link_to "Edit", edit_book_path(book.id) %>
+	<%= link_to "Destroy", '/books', method: :delete %>
+<% end %>
+
+<h2>New Book</h2>
+<%= form_for(@book) do |f| %>
+	<h4>Title</h4>
+	<%= f.text_field :title %>
+	<h4>Body</h4>
+	<%= f.text_area :body %>
+	<%= f.submit 'Create Book' %>
 <% end %>
