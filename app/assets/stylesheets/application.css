@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+.header{
+	margin-left: 50px;
+}
+
+.main_top{
+	margin-left: 90px;
+	line-height: 50px;
+}
+
+.main_index{
+	margin-left: 90px;
+}
+td{
+	font-size: 12px;
+}
+h4{
+	margin-bottom: 0;
+}
+.index_from{
+	margin-top: 0px;
+}
+.form_head{
+	margin-bottom: 0;
+}
+
+.main_edit{
+	margin-left: 90px;
+}
+.main_show{
+	margin-left: 90px;
+}
