@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+.flash{
+	color: limegreen;
+}
+
 .header{
 	margin-left: 50px;
 }
@@ -30,6 +34,21 @@ td{
 }
 h4{
 	margin-bottom: 0;
+}
+.alert{
+	width: 430px;
+}
+.alert_head{
+	margin-top: 0;
+	background-color: red;
+	color: white;
+	margin-bottom: 0;
+}
+ul{
+	color: red;
+	border-style: solid;
+	border-color: red;
+	margin-top: 0;
 }
 .index_from{
 	margin-top: 0px;
