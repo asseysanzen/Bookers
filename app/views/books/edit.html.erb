@@ -1,6 +1,18 @@
 <div class="header"><h2>Editing Book</h2></div>
 
 <div class="main_edit">
+	<% if @book.errors.any? %>
+  				<div class="alert">
+  				<div class="alert_head">
+  					<h4><%= @book.errors.count %>
+  				errors prohibited this book from being saved:</h4></div>
+    			<ul>
+      				<% @book.errors.full_messages.each do |message| %>
+        			<li><%= message %></li>
+      				<% end %>
+    			</ul>
+  				</div>
+			<% end %>
 	<%= form_for(@book) do |f| %>
 	<div class="edit_form">
     	<p class="form_head">Title</p>
@@ -9,7 +21,7 @@
     	<%= f.text_area :body %>
 	</div>
 	<div class="edit_update">
-    <%= f.submit 'Update book' %>
+    <%= f.submit 'Update Book' %>
 	</div>
 	<% end %>
 	<div class="edit_move">
